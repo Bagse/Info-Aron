@@ -1,0 +1,63 @@
+.pie__pagina{
+    background: var(--color-principal);
+}
+
+.footer__autor{
+    color: var(--color-letra-secundario);
+    text-align: center;
+}
+
+.footer__redes{
+    text-align: center;
+}
+
+
+
+
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .pie__pagina{
+        padding: .7rem 7rem;
+    }
+    .footer__autor{
+        font-size: .9rem;
+    }
+    .footer__imagen{
+        height: 20px;
+        width: 20px;
+        transition: 1s all;
+    }
+    .footer__imagen:hover{
+        transform: scale(1.2);
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .pie__pagina{
+        padding: .7rem 5rem;
+    }
+    .footer__autor{
+        font-size: .8rem;
+    }
+    .footer__imagen{
+        height: 18px;
+        width: 18px;
+        transition: 1s all;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .pie__pagina{
+        padding: .7rem 2rem;
+    }
+    .footer__autor{
+        font-size: .7rem;
+    }
+    .footer__imagen{
+        height: 15px;
+        width: 15px;
+        transition: 1s all;
+    }
+}

@@ -1,0 +1,142 @@
+/* container principal */
+.container__general{
+    background: var(--color-secundario);
+    padding: 3rem 7rem;
+    display: inline-flex;
+}
+
+/* contenedor slaider */
+.container__slaider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider__section{
+    width: 100%;
+}
+
+.slider__img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-fea);
+}
+.slider__btn:hover{
+    background: #ffff;
+}
+
+.slider__btn__right{
+    right: 10px;
+}
+
+.slider__btn__left{
+    left: 10px;
+}
+
+.contenedor__titulo{
+    color: var(--color-letra);
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.contenedor__subtexto{
+    color: var(--color-blanco);
+    font-weight: normal;
+    margin-top: 2.3rem;
+}
+
+/* contenedor ubicacion */
+.container__ubicacion{
+    background: var(--color-secundario);
+    margin-top: -3rem;
+    padding: 2rem 7rem;
+}
+
+.ubicacion__titulo{
+    color: var(--color-letra);
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ubicacion__maps{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .container__general{
+        padding: 3rem 7rem;
+        display: inline-flex;
+    }
+    .contenedor__texto{
+        margin-left: 2rem;
+        width: 120%;
+    }
+    .container__ubicacion{
+        margin-top: -3rem;
+        padding: 2rem 7rem;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .container__general{
+        padding: 2rem 2rem;
+        display: block;
+    }
+    .contenedor__texto{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 100%;
+    }
+    .container__ubicacion{
+        padding: 2rem 1rem;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .container__general{
+        padding: 2rem 1rem;
+        display: block;
+    }
+    .contenedor__texto{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 100%;
+    }
+    .container__ubicacion{
+        padding: 2rem 1rem;
+    }
+}
+

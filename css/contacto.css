@@ -1,0 +1,139 @@
+.formcontacto{
+    background: var(--color-secundario);
+}
+
+.formcontacto__contacto{
+    display: flex;
+}
+
+.formcontacto__title{
+    color: var(--color-letra);
+    font-weight: bold;
+}
+
+.formcontacto__subtext{
+    color: var(--color-blanco);
+    font-weight: normal;
+}
+
+.formcontacto__form{
+    display: flex;
+    flex-direction: column;
+    padding-top: .5rem;
+}
+
+.formcontacto__input{
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 0 .7rem;
+    padding: .4rem .4rem;
+    font-family: 'Raleway';
+}
+
+.form__label{
+    color: var(--color-letra);
+    display: block;
+    margin: 0 0 .7rem;
+    font-size: 1.2rem;
+}
+
+.formcontacto__textarea{
+    border: none;
+    border-radius: 5px;
+    padding: .4rem .4rem;
+    font-family: 'Raleway';
+}
+
+.formcontacto__boton{
+    background: var(--color-principal);
+    border: 10 10px;
+    border-radius: 5px;
+    color: var(--color-letra);
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 2rem;
+    transition: 1.5s all;
+    padding: 1rem .7rem;
+    font-size: 1rem;
+} 
+
+
+
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .formcontacto{
+        padding: 2rem 7rem;
+    }
+    .formcontacto__img{
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px;
+    }
+    .formcontacto__text{
+        padding-left: 2.5rem;
+    }
+    .formcontacto__title{
+        font-size: 1.75rem;
+    }
+    .formcontacto__boton:hover{
+        background: #343a40;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .formcontacto{
+        padding: 4rem 2rem;
+    }
+    .formcontacto__img{
+        display: none;
+    }
+    .formcontacto__text{
+        padding-left: .5rem;
+    }
+    .formcontacto__title{
+        font-size: 2rem;
+    }
+    .formcontacto__subtext{
+        font-size: 1.2rem;
+    }
+    .formcontacto__input{
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    .formcontacto__boton{
+        border: none;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .formcontacto{
+        padding: 2rem 1rem;
+    }
+    .formcontacto__img{
+        display: none;
+    }
+    .formcontacto__text{
+        padding-left: .5rem;
+    }
+    .formcontacto__title{
+        font-size: 2rem;
+    }
+    .formcontacto__subtext{
+        font-size: 1.2rem;
+    }
+    .formcontacto__input{
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    .formcontacto__textarea{
+        font-size: 1rem;
+    }
+    .formcontacto__boton{
+        border: none;
+    }
+}

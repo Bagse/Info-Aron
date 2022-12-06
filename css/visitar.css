@@ -1,0 +1,105 @@
+.visitar{
+    background: var(--color-secundario);
+}
+
+.visitar__nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visitar__principal{
+    color: var(--color-letra);
+    padding-left: 2rem;
+}
+
+.visitar__vertodo{
+    color: var(--color-amarillo);
+}
+
+.visitar__line{
+    display: grid;
+}
+
+.visitar__titulo{
+    color: var(--color-letra);
+}
+
+.visitar__descripcion{
+    color: var(--color-blanco);
+    padding: .6rem .2rem;
+}
+
+.visitar__vermas{
+    align-items: center;
+    color: var(--color-amarillo);
+    padding: .5rem .2rem;
+}
+
+
+
+
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .visitar{
+        padding: .5rem 7rem;
+    }
+    .img__page__visitar{
+        border-radius: 8px;
+        height: 180px;
+        width: 260px;
+        object-fit: cover;
+    }
+    .visitar__vertodo:hover{
+        color: var(--color-letra-secundario);
+        text-decoration: underline;
+    }
+    .visitar__line{
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+        gap: 3.5rem;
+        padding-right: 2.6rem;
+    }
+    .visitar__vertodo:hover{
+        color: var(--color-letra-secundario);
+        text-decoration: underline;
+    }
+    .visitar__vermas:hover{
+        color: var(--color-letra-secundario);
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .visitar{
+        padding: .7rem 3rem;
+        margin-left: -4rem;
+    }
+    .img__page__visitar{
+        border-radius: 7px;
+        height: 200px;
+        width: 200px;
+    }
+    .visitar__line{
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+        gap: 1.5rem;
+        padding-right: .5rem;
+    } 
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .visitar{
+        padding: .7rem .5rem;
+        margin-left: -2rem;
+    }
+    .img__page__visitar{
+        border-radius: 5px;
+        height: 150px;
+        width: 160px;
+    }
+    .visitar__line{
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 8rem), 1fr));
+        gap: 1.2rem;
+        padding-right: 1.5rem;
+    }
+}

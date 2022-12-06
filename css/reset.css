@@ -1,0 +1,25 @@
+:root{
+   --color-principal: #232020;
+   --color-secundario: #323031;
+   --color-letra: #1BFD9C;
+   --color-letra-secundario: #02c39a;
+    --color-fe: #2a3d45;
+   --color-amarillo: #ffd000;
+   --color-blanco: #f9f9f9;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}

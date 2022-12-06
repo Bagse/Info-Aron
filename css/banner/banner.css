@@ -1,0 +1,82 @@
+.banner__imagen{
+    background: url(../banner/plaza-armas.jpg) no-repeat center / cover;
+}
+
+.banner__titulo{
+    color: var(--color-principal);
+    font-weight: bold;
+    font-family: 'Alfa Slab One', cursive;
+    position: absolute;
+    padding: .5rem .5rem;
+    -webkit-text-stroke: 1px var(--color-letra);
+}
+
+.banner__parrafo{
+    color: var(--color-blanco);
+    font-weight: bold;
+    font-family: 'Alfa Slab One', cursive;
+    position: absolute;
+    padding: .5rem .5rem;
+    -webkit-text-stroke: 1px var(--color-principal);
+}
+
+
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .banner__imagen{
+        height: 28rem;
+        width: 100%;
+    }
+    .banner__titulo{
+        font-size: 3.8rem;
+        text-align: center;
+        left: 10%;
+        top: 38%;
+    }
+    .banner__parrafo{
+        text-align: center;
+        font-size: 1.5rem;
+        left: 10%;
+        top: 60%;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .banner__imagen{
+        height: 30rem;
+        width: 100%;
+    }
+    .banner__titulo{
+        font-size: 2.7rem;
+        text-align: start;
+        left: 10%;
+        top: 49%;
+    }
+    .banner__parrafo{
+        font-size: 1.3rem;
+        text-align: start;
+        left: 10%;
+        top: 60%;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .banner__imagen{
+        height: 30rem;
+        width: 100%;
+    }
+    .banner__titulo{
+        font-size: 2.6rem;
+        text-align: start;
+        left: 10%;
+        top: 55%;
+    }
+    .banner__parrafo{
+        font-size: 1.4rem;
+        text-align: start;
+        left: 10%;
+        top: 74%;
+    }
+}
