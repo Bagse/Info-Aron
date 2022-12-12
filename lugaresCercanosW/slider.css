@@ -1,4 +1,4 @@
-/* container principal */
+/* contenedor principal */
 .container__general{
     background: var(--color-secundario);
     padding: 3rem 7rem;
@@ -137,6 +137,9 @@
     }
     .container__ubicacion{
         padding: 2rem 1rem;
+    }
+    .slider__btn{
+        height: 38px;
     }
 }
 

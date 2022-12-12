@@ -129,11 +129,14 @@
     .formcontacto__input{
         font-size: 1rem;
         margin-bottom: 1.2rem;
+        width: 20rem;
     }
     .formcontacto__textarea{
         font-size: 1rem;
+        width: 20rem;
     }
     .formcontacto__boton{
         border: none;
+        width: 21rem;
     }
 }
